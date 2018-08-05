@@ -9,12 +9,12 @@ import {delay} from 'rxjs/operators';
 export class LeaderService {
   
   getLeader(id:number):Observable<Leader>{
-    return of(LEADERS.filter((dish)=>(dish.id ===id))[0]).pipe(delay(2000));
+    return of(LEADERS.filter((dish)=>(dish.id ===id))[0]).pipe(delay(1000));
   }
   
   getFeaturedLeader():Observable<Leader>{
-    return of(LEADERS.filter(dish=>dish.featured)[0]).pipe(delay(2000));  }
+    return of(LEADERS.filter(dish=>dish.featured)[0]).pipe(delay(1000));  }
 
   getLeaders(): Observable<Leader[]>{
-    return of(LEADERS).pipe(delay(2000));}
+    return of(LEADERS).pipe(delay(1000));}
 }
