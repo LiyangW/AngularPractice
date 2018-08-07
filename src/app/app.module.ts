@@ -8,6 +8,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import 'hammerjs';
+import {MatSliderModule} from '@angular/material/slider';
 import { MenuComponent } from './menu/menu.component';
 import{MatListModule} from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -46,6 +47,7 @@ import { LoginComponent } from './login/login.component';
   MatProgressSpinnerModule,
   MatSlideToggleModule,
   MatSelectModule,
+  MatSliderModule,
   ReactiveFormsModule,
       MatFormFieldModule, 
     MatInputModule,
@@ -61,6 +63,7 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule,
     MatDialogModule,
     FormsModule 
+
   ],
   providers: [DishService, PromotionService,LeaderService],
   entryComponents:[LoginComponent],
